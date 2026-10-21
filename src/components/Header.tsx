@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Brand, Icon } from './ui'
 import { useActiveSection } from '../hooks/useActiveSection'
 
@@ -7,7 +7,8 @@ const links = [['servicios', 'Servicios'], ['demo', 'Demo'], ['proyectos', 'Proy
 export function Header() {
   const [open, setOpen] = useState(false)
   const navRef = useRef<HTMLElement>(null)
-  const active = useActiveSection(['inicio', ...links.map(([id]) => id)])
+  const sectionIds = useMemo(() => ['inicio', ...links.map(([id]) => id)], [])
+  const active = useActiveSection(sectionIds)
   useEffect(() => { const close = (event: KeyboardEvent) => { if (event.key === 'Escape') setOpen(false) }; window.addEventListener('keydown', close); return () => window.removeEventListener('keydown', close) }, [])
   useEffect(() => { if (open) navRef.current?.querySelector<HTMLAnchorElement>('a')?.focus() }, [open])
   return <header className="header"><div className="container nav-shell"><Brand/><nav id="menu-principal" ref={navRef} className={open ? 'nav open' : 'nav'} aria-label="Navegación principal">

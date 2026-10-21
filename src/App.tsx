@@ -7,6 +7,7 @@ import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { Marquee } from './components/Marquee'
+import { Manifesto } from './components/Manifesto'
 import { Process } from './components/Process'
 import { Projects } from './components/Projects'
 import { Services } from './components/Services'
@@ -14,6 +15,6 @@ import { ScrollProgress, WhatsappButton } from './components/ui'
 import './App.css'
 
 function App() {
-  return <LazyMotion features={domAnimation}><ScrollProgress/><a className="skip-link" href="#contenido">Saltar al contenido</a><Header/><main id="contenido"><Hero/><Marquee/><Services/><Demo/><Projects/><Process/><About/><Faq/><Contact/></main><Footer/><WhatsappButton/></LazyMotion>
+  return <LazyMotion features={domAnimation}><ScrollProgress/><a className="skip-link" href="#contenido">Saltar al contenido</a><Header/><main id="contenido"><Hero/><Marquee/><Manifesto/><Services/><Demo/><Projects/><Process/><About/><Faq/><Contact/></main><Footer/><WhatsappButton/></LazyMotion>
 }
 export default App
