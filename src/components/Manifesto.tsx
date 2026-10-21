@@ -1,0 +1,6 @@
+import { m, useReducedMotion } from 'motion/react'
+
+export function Manifesto() {
+  const reduced = useReducedMotion() ?? false
+  return <section className="manifesto" aria-labelledby="manifesto-title"><div className="container manifesto-layout"><div><p className="manifesto-index">01 / MANIFIESTO</p><h2 id="manifesto-title"><m.span initial={reduced ? false : { opacity: .25, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .2 }} transition={{ duration: .55 }}>La tecnología no debería<br/>complicarte la vida.</m.span><m.i initial={reduced ? false : { opacity: .25, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .2 }} transition={{ duration: .55, delay: .1 }}>Debería hacerla más fácil.</m.i></h2><p className="manifesto-copy">Diseñamos sistemas claros para que tu equipo dedique su tiempo a avanzar, no a pelear con procesos.</p></div><m.div className="manifesto-mark" initial={reduced ? false : { opacity: 0, rotate: -8, y: 20 }} whileInView={{ opacity: 1, rotate: 0, y: 0 }} viewport={{ once: true, amount: .25 }} transition={{ duration: .65, delay: .08 }} aria-hidden="true"><span>N</span><i/><i/><b>HECHO PARA USARSE</b></m.div></div></section>
+}
