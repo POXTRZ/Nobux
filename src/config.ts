@@ -1,5 +1,5 @@
 // Valores editables de la agencia. Completa los contactos antes de publicar.
-export const site = { name: 'Órbita', city: 'Querétaro, México', email: '', whatsapp: '', founders: ['Tu nombre', 'Nombre de tu socio'] }
+export const site = { name: 'Nobux', city: 'Querétaro, México', email: '', whatsapp: '', founders: ['Tu nombre', 'Nombre de tu socio'] }
 export const services = [
   { number: '01', title: 'Sitios web que convierten', category: 'Presencia digital', description: 'Páginas rápidas, claras y adaptadas a cualquier dispositivo para que tus clientes te encuentren y confíen en ti.', tags: ['Landing pages', 'Sitios corporativos', 'Catálogos'] },
   { number: '02', title: 'Sistemas a tu medida', category: 'Operación inteligente', description: 'Herramientas para que tu negocio deje de depender de hojas sueltas y procesos manuales.', tags: ['Inventarios', 'Citas y reservas', 'Paneles de control'] },
