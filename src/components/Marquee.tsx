@@ -1,0 +1,2 @@
+import { businessTypes } from '../config'
+export function Marquee() { const content = businessTypes.map(type => <span key={type}><b>✦</b>{type}</span>); return <section className="marquee" aria-label="Tipos de negocio a los que se dirigen nuestros servicios"><p className="sr-only">Trabajamos con negocios como {businessTypes.join(', ')}. No son clientes mostrados.</p><div>{content}{content}</div></section> }

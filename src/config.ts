@@ -1,7 +1,10 @@
 // Datos editables. Completa contactos, URL, perfiles y enlaces antes de publicar.
 export type Founder = { name: string; role?: string; link?: string; photo?: string }
 export type ProjectStatus = 'demo' | 'real'
-export type Project = { title: string; type: string; description: string; tone: 'blue' | 'orange' | 'mint' | 'school'; initials: string; status: ProjectStatus; technologies: string[]; image?: string; url?: string; result?: string }
+export type Project = {
+  title: string; type: string; description: string; tone: 'blue' | 'orange' | 'mint' | 'school'; initials: string
+  status: ProjectStatus; technologies: string[]; image?: string; url?: string; result?: string; problem?: string; process?: string
+}
 
 export const site = {
   name: 'Nobux', city: 'Querétaro, México', url: '', email: '', whatsapp: '',
@@ -11,6 +14,7 @@ export const services = [
   { number: '01', title: 'Sitios web que convierten', category: 'Presencia digital', description: 'Páginas rápidas, claras y adaptadas a cualquier dispositivo para que tus clientes te encuentren y confíen en ti.', tags: ['Landing pages', 'Sitios corporativos', 'Catálogos'] },
   { number: '02', title: 'Sistemas a tu medida', category: 'Operación inteligente', description: 'Herramientas para que tu negocio deje de depender de hojas sueltas y procesos manuales.', tags: ['Inventarios', 'Citas y reservas', 'Paneles de control'] },
   { number: '03', title: 'Integraciones prácticas', category: 'Procesos conectados', description: 'Conectamos formularios, notificaciones y flujos de trabajo para simplificar el día a día de tu equipo.', tags: ['Formularios', 'WhatsApp', 'Automatización'] },
+  { number: '04', title: 'Automatización con sentido', category: 'Flujos conectados', description: 'Diseñamos acciones repetibles que mantienen a tu equipo informado sin sumar trabajo manual.', tags: ['Alertas', 'Seguimiento', 'Procesos'] },
 ]
 export const projects: Project[] = [
   { title: 'Portal educativo', type: 'Plataforma web', description: 'Un espacio digital para centralizar información, servicios y procesos escolares.', tone: 'blue', initials: 'PE', status: 'demo', technologies: ['Diseño UI', 'Web', 'Producto digital'] },
