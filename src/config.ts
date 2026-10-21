@@ -7,14 +7,14 @@ import lightweightHome from './assets/projects/lightweight-home.jpeg'
 import lightweightProgress from './assets/projects/lightweight-progress.jpeg'
 import lightweightTraining from './assets/projects/lightweight-training.jpeg'
 
-export type Founder = { name: string; role: string; link?: string; photo: string; photoPosition?: string; pending?: boolean }
+export type Founder = { name: string; role: string; specialty?: string; link?: string; photo: string; photoPosition?: string }
 export type Project = { title: string; type: string; description: string; tone: 'lightweight' | 'school'; images: string[]; technologies: string[]; problem?: string; process?: string }
 
 export const site = {
   name: 'Nobux', city: 'Querétaro, México', url: '', email: '', whatsapp: '',
   founders: [
-    { name: 'Hugo Romero', role: 'Frontend · interfaces · desarrollo web', link: 'https://hugo-romero-dev.vercel.app/', photo: hugoPhoto, photoPosition: '48% center' },
-    { name: 'Perfil en confirmación', role: 'Especialidad y perfil profesional pendientes', photo: founderTwoPhoto, photoPosition: 'center center', pending: true },
+    { name: 'Hugo Romero', role: 'Desarrollador de software', specialty: 'Frontend, interfaces y desarrollo web', link: 'https://hugo-romero-dev.vercel.app/', photo: hugoPhoto, photoPosition: '48% center' },
+    { name: 'Ian Buzzo', role: 'Desarrollador de software', specialty: 'Sistemas, producto y desarrollo web', photo: founderTwoPhoto, photoPosition: 'center center' },
   ] satisfies Founder[],
 }
 
