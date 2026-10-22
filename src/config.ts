@@ -13,7 +13,7 @@ export type Project = { title: string; type: string; description: string; tone: 
 export const site = {
   name: 'Nobux', city: 'Querétaro, México', url: '', email: '', whatsapp: '',
   founders: [
-    { name: 'Hugo Romero', role: 'Desarrollador de software', specialty: 'Frontend, interfaces y desarrollo web', link: 'https://hugo-romero-dev.vercel.app/', photo: hugoPhoto, photoPosition: '48% center' },
+    { name: 'Hugo Romero', role: 'Desarrollador de software', specialty: 'Sistemas · Producto · Desarrollo web', link: 'https://hugo-romero-dev.vercel.app/', photo: hugoPhoto, photoPosition: '48% center' },
     { name: 'Ian Buzzo', role: 'Desarrollador de software', specialty: 'Sistemas, producto y desarrollo web', photo: founderTwoPhoto, photoPosition: 'center center' },
   ] satisfies Founder[],
 }
