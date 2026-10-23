@@ -11,10 +11,10 @@ export type Founder = { name: string; role: string; specialty?: string; link?: s
 export type Project = { title: string; type: string; description: string; tone: 'lightweight' | 'school'; images: string[]; technologies: string[]; problem?: string; process?: string }
 
 export const site = {
-  name: 'Nobux', city: 'Querétaro, México', url: '', email: '', whatsapp: '',
+  name: 'Nobux', city: 'Querétaro, México', url: '', email: 'hugo.romero.dev@gmail.com', whatsapp: '524794827966',
   founders: [
     { name: 'Hugo Romero', role: 'Desarrollador de software', specialty: 'Sistemas · Producto · Desarrollo web', link: 'https://hugo-romero-dev.vercel.app/', photo: hugoPhoto, photoPosition: '48% center' },
-    { name: 'Ian Buzzo', role: 'Desarrollador de software', specialty: 'Sistemas, producto y desarrollo web', photo: founderTwoPhoto, photoPosition: 'center center' },
+    { name: 'Ian Buzzo', role: 'Desarrollador de software', specialty: 'Sistemas · Producto · Desarrollo web', photo: founderTwoPhoto, photoPosition: 'center center' },
   ] satisfies Founder[],
 }
 
